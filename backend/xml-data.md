@@ -20,15 +20,37 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
         </group>
     </permissions>
     <items>
-        <appointment>
-            <color val="#FF0000" />
-            <start val="insertLongHere" />
-            <end val="insertLongHere" />
-            <cat val="Leisure" />
-            <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
-        </appointment>
-        <milestone />
-        <deadline />
+        <appointments>
+            <appointment>
+                <name val="somename"/>
+                <color val="#FF0000" />
+                <start val="insertLongHere" />
+                <end val="insertLongHere" />
+                <cat val="Leisure" />
+                <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
+            </appointment>
+        </appointments>
+        <milestones>
+            <milestone id="someID">
+                <name val="somename"/>
+                <duedate val="date"/>
+            </milestone>
+        </milestones>
+        <tasks>
+            <task>
+                <name val="name"/>
+                <milestone id="id of the milestone"/>
+                <duedate val="date"/>
+                <desc>Dolor</desc>
+                <subtasks>
+                    <subtask>
+                        <name val="someName"/>
+                        <duedate val="date"/>
+                        <desc>sit amet</desc>
+                    </subtask>
+                </subtasks>
+            </task>
+        </tasks>
     </items>
 </calendar>
 ```
