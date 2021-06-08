@@ -5,6 +5,7 @@ This document outlines how the data is saved in xml format on the backend side. 
 # Calendar 
 
 Each calendar has its own file containing all appointments, mile stones and other calendar data, as well as inofrmation about the calendar owner and view and edit permissions.
+Descriptions have to be limited to 250 chars (in Frontend and Backend). 
 
 ```xml
 <calendar>
@@ -24,7 +25,7 @@ Each calendar has its own file containing all appointments, mile stones and othe
             <start val="insertLongHere" />
             <end val="insertLongHere" />
             <cat val="Leisure" />
-            <desc>Lorem Ipsum.</desc>
+            <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
         </appointment>
         <milestone />
         <deadline />
@@ -34,11 +35,12 @@ Each calendar has its own file containing all appointments, mile stones and othe
 
 # User 
 
-Each user has their own file, listing all calendars the user has at least read access to.
+Each user has their own file, listing all calendars the user has at least read access to. 
+User names have to be limited to (ASCII-)letters, numbers and +, -, _ (Frontend and Backend).
 
 ```xml
 <user>
-    <name val="Günther Pascal" /> 
+    <name val="Günther Pascal" /> <!-- Has to be limited to (ASCII-)letters, numbers and +, -, _ (FE and BE)-->
     <items>
         <calendar href="file1" />
         <calendar href="file2" />
