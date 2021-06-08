@@ -20,7 +20,7 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
         </group>
     </permissions>
     <items>
-        <appointsments>
+        <appointments>
             <appointment>
                 <name val="somename"/>
                 <color val="#FF0000" />
@@ -29,7 +29,7 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
                 <cat val="Leisure" />
                 <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
             </appointment>
-        </appointsments>
+        </appointments>
         <milestones>
             <milestone id="someID">
                 <name val="somename"/>
