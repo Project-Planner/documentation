@@ -1,13 +1,13 @@
-# Data
+# Data Specification
 
 This document outlines how the data is saved in xml format on the backend side. Note that saving the data in xml was one of the requirements. 
 
 # Calendar 
 
-Each calendar has its own file containing all appointments, mile stones and other calandar data, as well as inofrmation about the calendar owner and view and edit permissions.
+Each calendar has its own file containing all appointments, mile stones and other calendar data, as well as inofrmation about the calendar owner and view and edit permissions.
 
 ```xml
-<calender>
+<calendar>
     <name val="Birthday Calendar" />
     <owner href="ownerFile1" />
     <permissions>
@@ -29,7 +29,7 @@ Each calendar has its own file containing all appointments, mile stones and othe
         <milestone />
         <deadline />
     </items>
-</calender>
+</calendar>
 ```
 
 # User 
@@ -40,9 +40,9 @@ Each user has their own file, listing all calendars the user has at least read a
 <user>
     <name val="Günther Pascal" /> 
     <items>
-        <calender href="file1" />
-        <calender href="file2" />
-        <calender href="file3" />
+        <calendar href="file1" />
+        <calendar href="file2" />
+        <calendar href="file3" />
     </items>
 </user>
 ```
