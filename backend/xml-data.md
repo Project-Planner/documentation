@@ -77,15 +77,41 @@ Each user will have an entry in the auth file, of which there is only one. The a
 
 ```xml
 <auth>
-    <items>
-        <entry>
-            <name val="Peter" />
-            <hash val="trololol" />
-        </entry>
-        <entry>
-            <name val="Günther" />
-            <hash val="trololol" />
-        </entry>
-    </items>
+    <login>
+        <name val="Peter" />
+        <hash val="trololol" />
+        <jwts>
+            <jwt>
+                <authorized val="true" />
+                <token_id val="uuid" />
+                <user_id val="userid" />
+                <expiry val="val" />
+            </jwt>
+            <jwt>
+                <authorized val="true" />
+                <token_id val="uuid" />
+                <user_id val="userid" />
+                <expiry val="val" />
+            </jwt>
+        </jwts>
+    </login>
+    <login>
+        <name val="Günther" />
+        <hash val="trololol" />
+        <jwts>
+            <jwt>
+                <authorized val="true" />
+                <token_id val="uuid" />
+                <user_id val="userid" />
+                <expiry val="val" />
+            </jwt>
+            <jwt>
+                <authorized val="true" />
+                <token_id val="uuid" />
+                <user_id val="userid" />
+                <expiry val="val" />
+            </jwt>
+        </jwts>
+    </login>
 </auth>
 ```
