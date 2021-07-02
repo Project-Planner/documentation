@@ -31,8 +31,23 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
                 <cat val="Leisure" />
                 <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
             </appointment>
+            <appointment id="someID">
+                <name val="somename"/>
+                <color val="#FF0000" />
+                <startDate val="1.4.1990"/>
+                <startTime val="4:12" />
+                <endTime val="5:12" />
+                <endDate val="14.4.2021" />
+                <cat val="Leisure" />
+                <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
+            </appointment>
         </appointments>
         <milestones>
+            <milestone id="someID">
+                <name val="somename"/>
+                <duedate val="date"/>
+                <duetime val="5:34"/>
+            </milestone>
             <milestone id="someID">
                 <name val="somename"/>
                 <duedate val="date"/>
@@ -47,6 +62,33 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
                 <duetime val="5:34"/>
                 <desc>Dolor</desc>
                 <subtasks>
+                    <subtask id="someID">
+                        <name val="someName"/>
+                        <duedate val="date"/>
+                        <duetime val="5:34"/>
+                        <desc>sit amet</desc>
+                    </subtask>
+                    <subtask id="someID">
+                        <name val="someName"/>
+                        <duedate val="date"/>
+                        <duetime val="5:34"/>
+                        <desc>sit amet</desc>
+                    </subtask>
+                </subtasks>
+            </task>
+            <task id="someID">
+                <name val="name"/>
+                <milestone id="id of the milestone"/>
+                <duedate val="date"/>
+                <duetime val="5:34"/>
+                <desc>Dolor</desc>
+                <subtasks>
+                    <subtask id="someID">
+                        <name val="someName"/>
+                        <duedate val="date"/>
+                        <duetime val="5:34"/>
+                        <desc>sit amet</desc>
+                    </subtask>
                     <subtask id="someID">
                         <name val="someName"/>
                         <duedate val="date"/>
