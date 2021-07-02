@@ -21,7 +21,7 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
     </permissions>
     <items>
         <appointments>
-            <appointment>
+            <appointment id="someID">
                 <name val="somename"/>
                 <color val="#FF0000" />
                 <startDate val="1.4.1990"/>
@@ -39,13 +39,13 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             </milestone>
         </milestones>
         <tasks>
-            <task>
+            <task id="someID">
                 <name val="name"/>
                 <milestone id="id of the milestone"/>
                 <duedate val="date"/>
                 <desc>Dolor</desc>
                 <subtasks>
-                    <subtask>
+                    <subtask id="someID">
                         <name val="someName"/>
                         <duedate val="date"/>
                         <desc>sit amet</desc>
