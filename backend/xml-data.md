@@ -24,8 +24,10 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             <appointment>
                 <name val="somename"/>
                 <color val="#FF0000" />
-                <start val="insertLongHere" />
-                <end val="insertLongHere" />
+                <startDate val="1.4.1990"/>
+                <startTime val="4:12" />
+                <endTime val="5:12" />
+                <endDate val="14.4.2021" />
                 <cat val="Leisure" />
                 <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
             </appointment>
