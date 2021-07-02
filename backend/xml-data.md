@@ -36,6 +36,7 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             <milestone id="someID">
                 <name val="somename"/>
                 <duedate val="date"/>
+                <duetime val="5:34"/>
             </milestone>
         </milestones>
         <tasks>
@@ -43,11 +44,13 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
                 <name val="name"/>
                 <milestone id="id of the milestone"/>
                 <duedate val="date"/>
+                <duetime val="5:34"/>
                 <desc>Dolor</desc>
                 <subtasks>
                     <subtask id="someID">
                         <name val="someName"/>
                         <duedate val="date"/>
+                        <duetime val="5:34"/>
                         <desc>sit amet</desc>
                     </subtask>
                 </subtasks>
