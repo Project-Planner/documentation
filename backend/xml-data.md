@@ -10,7 +10,8 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
 ```xml
 <calendar>
     <name val="Birthday Calendar" />
-    <owner href="ownerFile1" />
+    <owner val="ownerName" href="ownerFile1" />
+    <id val="ownerName/Birthday Calendar" /> <!--this field must always be formed like this and it must be unique -> calendar name must be unique to user-->
     <permissions>
         <group val="View">
             <user href="Kevin" />
