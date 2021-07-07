@@ -22,26 +22,23 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             <user val="lol2" />
         </edit>
     </permissions>
+    <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
     <items>
         <appointments>
             <appointment id="someID">
                 <name val="somename"/>
-                <color val="#FF0000" />
                 <startDate val="1.4.1990"/>
                 <startTime val="4:12" />
                 <endTime val="5:12" />
                 <endDate val="14.4.2021" />
-                <cat val="Leisure" />
                 <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
             </appointment>
             <appointment id="someID">
                 <name val="somename"/>
-                <color val="#FF0000" />
                 <startDate val="1.4.1990"/>
                 <startTime val="4:12" />
                 <endTime val="5:12" />
                 <endDate val="14.4.2021" />
-                <cat val="Leisure" />
                 <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
             </appointment>
         </appointments>
@@ -123,17 +120,11 @@ User names have to be limited to (ASCII-)letters, numbers and +, -, _ (Frontend 
 
 # Auth 
 
-Each user will have an entry in the auth file, of which there is only one. The auth file stores user names alongside the bcrypt password hash of the user. 
+Each user will have login info. Login stores user names alongside the bcrypt password hash of the user. 
 
 ```xml
-<auth>
-    <login>
-        <name val="Peter" />
-        <hash val="trololol" />
-    </login>
-    <login>
-        <name val="Günther" />
-        <hash val="trololol" />
-    </login>
-</auth>
+<login>
+    <name val="Peter" />
+    <hash val="trololol" />
+</login>
 ```
