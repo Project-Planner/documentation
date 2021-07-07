@@ -47,11 +47,13 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
                 <name val="somename"/>
                 <duedate val="date"/>
                 <duetime val="5:34"/>
+                <desc>Some Milestone</desc>
             </milestone>
             <milestone id="someID">
                 <name val="somename"/>
                 <duedate val="date"/>
                 <duetime val="5:34"/>
+                <desc>Some Milestone</desc>
             </milestone>
         </milestones>
         <tasks>
