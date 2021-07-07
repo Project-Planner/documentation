@@ -22,6 +22,7 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             <user val="lol2" />
         </edit>
     </permissions>
+    <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
     <items>
         <appointments>
             <appointment id="someID">
