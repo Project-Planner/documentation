@@ -111,7 +111,7 @@ User names have to be limited to (ASCII-)letters, numbers and +, -, _ (Frontend 
 
 ```xml
 <user>
-    <name val="Günther Pascal" /> <!-- Has to be limited to (ASCII-)letters, numbers and +, -, _ (FE and BE)-->
+    <name val="Günther Pascal" /> <!-- Has to be limited to (ASCII-)letters, numbers and -, _ (FE and BE)-->
     <items>
         <calendar href="file1" />
         <calendar href="file2" />
