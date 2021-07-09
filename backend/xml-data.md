@@ -60,18 +60,24 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             <task id="someID">
                 <name val="name"/>
                 <milestone id="id of the milestone"/>
+                <startDate val="1.4.1990"/>
+                <startTime val="4:12" />
                 <duedate val="date"/>
                 <duetime val="5:34"/>
                 <desc>Dolor</desc>
                 <subtasks>
                     <subtask id="someID">
                         <name val="someName"/>
+                        <startDate val="1.4.1990"/>
+                        <startTime val="4:12" />
                         <duedate val="date"/>
                         <duetime val="5:34"/>
                         <desc>sit amet</desc>
                     </subtask>
                     <subtask id="someID">
                         <name val="someName"/>
+                        <startDate val="1.4.1990"/>
+                        <startTime val="4:12" />
                         <duedate val="date"/>
                         <duetime val="5:34"/>
                         <desc>sit amet</desc>
@@ -81,18 +87,24 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             <task id="someID">
                 <name val="name"/>
                 <milestone id="id of the milestone"/>
+                <startDate val="1.4.1990"/>
+                <startTime val="4:12" />
                 <duedate val="date"/>
                 <duetime val="5:34"/>
                 <desc>Dolor</desc>
                 <subtasks>
                     <subtask id="someID">
                         <name val="someName"/>
+                        <startDate val="1.4.1990"/>
+                        <startTime val="4:12" />
                         <duedate val="date"/>
                         <duetime val="5:34"/>
                         <desc>sit amet</desc>
                     </subtask>
                     <subtask id="someID">
                         <name val="someName"/>
+                        <startDate val="1.4.1990"/>
+                        <startTime val="4:12" />
                         <duedate val="date"/>
                         <duetime val="5:34"/>
                         <desc>sit amet</desc>
