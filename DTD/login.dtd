@@ -8,4 +8,4 @@
 
 <!ELEMENT hash EMPTY>
 <!ATTLIST hash
-  val NMTOKEN #REQUIRED>
+  val CDATA #REQUIRED>
