@@ -1,0 +1,13 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT user (name,items)>
+
+<!ELEMENT name EMPTY>
+<!ATTLIST name
+  val NMTOKEN #REQUIRED>
+
+<!ELEMENT items (calendar)+>
+
+<!ELEMENT calendar EMPTY>
+<!ATTLIST calendar
+  href CDATA #REQUIRED>
