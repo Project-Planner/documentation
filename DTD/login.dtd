@@ -1,0 +1,11 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT login (name,hash)>
+
+<!ELEMENT name EMPTY>
+<!ATTLIST name
+  val NMTOKEN #REQUIRED>
+
+<!ELEMENT hash EMPTY>
+<!ATTLIST hash
+  val NMTOKEN #REQUIRED>
