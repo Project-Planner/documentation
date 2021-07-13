@@ -6,6 +6,7 @@
 <!ATTLIST name
   val NMTOKEN #REQUIRED>
 
+<!-- Jeder User hat mindestens seinen Standard-Kalender, der nicht löschbar ist -->
 <!ELEMENT items (calendar)+>
 
 <!ELEMENT calendar EMPTY>
