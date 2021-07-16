@@ -1,0 +1,16 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT user (name,items)>
+
+<!ELEMENT name EMPTY>
+<!ATTLIST name
+  val NMTOKEN #REQUIRED>
+
+<!-- Jeder User hat mindestens seinen Standard-Kalender, der nicht löschbar ist -->
+<!ELEMENT items (calendar)+>
+
+<!-- Perm kann entweder "owner" "view" oder "edit" sein. -->
+<!ELEMENT calendar EMPTY>
+<!ATTLIST calendar
+  perm NMTOKEN #REQUIRED
+  href CDATA #REQUIRED>

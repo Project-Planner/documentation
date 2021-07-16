@@ -1,0 +1,86 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT calendar (name,owner,id,permissions,desc,items)>
+
+<!ELEMENT name EMPTY>
+<!-- Kalendernamen werden durch das Backend ggf. noch weiter eingeschraenkt, 
+allerdings nicht so restriktiv, dass NMTOKEN gerechtfertigt. 
+Im Frontend kann duch das pattern Attribut von inputs per regex dies auch gewaehrleistet werden. -->
+<!ATTLIST name
+  val CDATA #REQUIRED>
+
+<!ELEMENT owner EMPTY>
+<!ATTLIST owner
+  val NMTOKEN #REQUIRED>
+
+<!ELEMENT id EMPTY>
+<!-- CDATA, da id slash beinhaltet und zusammengesetzt aus <name_user>/<name_calendar> -->
+<!ATTLIST id
+  val CDATA #REQUIRED>
+
+<!ELEMENT permissions (view,edit)>
+
+<!ELEMENT items (appointments,milestones,tasks)>
+
+<!ELEMENT view (user)*>
+
+<!ELEMENT edit (user)*>
+
+<!ELEMENT user EMPTY>
+<!ATTLIST user
+  val NMTOKEN #REQUIRED>
+
+<!ELEMENT desc (#PCDATA)>
+
+<!ELEMENT appointments (appointment)*>
+
+<!ELEMENT milestones (milestone)*>
+
+<!ELEMENT tasks (task)*>
+
+<!-- Deutsches Datumsformat z.B. 01.01.1970 -->
+<!ELEMENT startDate EMPTY>
+<!ATTLIST startDate
+  val NMTOKEN #REQUIRED>
+
+<!ELEMENT startTime EMPTY>
+<!ATTLIST startTime
+  val NMTOKEN #REQUIRED>
+
+<!ELEMENT endTime EMPTY>
+<!ATTLIST endTime
+  val NMTOKEN #REQUIRED>
+
+<!ELEMENT endDate EMPTY>
+<!ATTLIST endDate
+  val NMTOKEN #REQUIRED>
+
+<!-- duedate wird von XSL anders interpretiert, als endDate, daher zwei Tags fuer 'dasselbe'-->
+<!ELEMENT duedate EMPTY>
+<!ATTLIST duedate
+  val NMTOKEN #REQUIRED>
+
+<!ELEMENT duetime EMPTY>
+<!ATTLIST duetime
+  val NMTOKEN #REQUIRED>
+
+<!ELEMENT appointment (name,startDate,startTime,endTime,endDate,desc)>
+<!-- Kein ID Datentyp, da alle IDs ggf. mit Ziffern beginnen und _ voranstellen unnoetiger Aufwand fuer Backend ist 
+    u. fehleranfaellig -->
+<!ATTLIST appointment
+  id NMTOKEN #REQUIRED>
+
+<!ELEMENT task (name,milestone,startDate,startTime,duedate,duetime,desc,
+                subtasks)>
+<!ATTLIST task
+  id NMTOKEN #REQUIRED>
+
+<!ELEMENT subtasks (subtask)*>
+
+<!ELEMENT subtask (name,startDate,startTime,duedate,duetime,desc)>
+<!ATTLIST subtask
+  id NMTOKEN #REQUIRED>
+
+<!ELEMENT milestone (name,duedate,duetime,desc)?>
+<!ATTLIST milestone
+  id NMTOKEN #REQUIRED>
