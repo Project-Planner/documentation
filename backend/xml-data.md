@@ -9,9 +9,9 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
 
 ```xml
 <calendar>
-    <name val="Birthday Calendar" />
+    <name val="Birthday_Calendar" />
     <owner val="ownerName" />
-    <id val="ownerName/Birthday Calendar" /> <!--this field must always be formed like this and it must be unique -> calendar name must be unique to user-->
+    <id val="ownerName/Birthday_Calendar" /> <!--this field must always be formed like this and it must be unique -> calendar name must be unique to user-->
     <permissions>
         <view>
             <user val="Kevin" />
@@ -25,16 +25,16 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
     <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
     <items>
         <appointments>
-            <appointment id="someID">
-                <name val="somename"/>
+            <appointment id="1224-34-2322342-42-24-24">
+                <name val="somename that works"/>
                 <startDate val="1.4.1990"/>
                 <startTime val="4:12" />
                 <endTime val="5:12" />
                 <endDate val="14.4.2021" />
                 <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
             </appointment>
-            <appointment id="someID">
-                <name val="somename"/>
+            <appointment id="1224-34-2322342-42-24-24">
+                <name val="somename that also works"/>
                 <startDate val="1.4.1990"/>
                 <startTime val="4:12" />
                 <endTime val="5:12" />
@@ -43,13 +43,13 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             </appointment>
         </appointments>
         <milestones>
-            <milestone id="someID">
+            <milestone id="1224-34-2322342-42-24-24">
                 <name val="somename"/>
                 <duedate val="date"/>
                 <duetime val="5:34"/>
                 <desc>Some Milestone</desc>
             </milestone>
-            <milestone id="someID">
+            <milestone id="1224-34-2322342-42-24-24">
                 <name val="somename"/>
                 <duedate val="date"/>
                 <duetime val="5:34"/>
@@ -57,7 +57,7 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             </milestone>
         </milestones>
         <tasks>
-            <task id="someID">
+            <task id="1224-34-2322342-42-24-24">
                 <name val="name"/>
                 <milestone id="id of the milestone"/>
                 <startDate val="1.4.1990"/>
@@ -66,7 +66,7 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
                 <duetime val="5:34"/>
                 <desc>Dolor</desc>
                 <subtasks>
-                    <subtask id="someID">
+                    <subtask id="1224-34-2322342-42-24-24">
                         <name val="someName"/>
                         <startDate val="1.4.1990"/>
                         <startTime val="4:12" />
@@ -74,7 +74,7 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
                         <duetime val="5:34"/>
                         <desc>sit amet</desc>
                     </subtask>
-                    <subtask id="someID">
+                    <subtask id="1224-34-2322342-42-24-24">
                         <name val="someName"/>
                         <startDate val="1.4.1990"/>
                         <startTime val="4:12" />
@@ -84,7 +84,7 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
                     </subtask>
                 </subtasks>
             </task>
-            <task id="someID">
+            <task id="1224-34-2322342-42-24-24">
                 <name val="name"/>
                 <milestone id="id of the milestone"/>
                 <startDate val="1.4.1990"/>
@@ -123,11 +123,11 @@ User names have to be limited to (ASCII-)letters, numbers and +, -, _ (Frontend 
 
 ```xml
 <user>
-    <name val="Günther Pascal" /> <!-- Has to be limited to (ASCII-)letters, numbers and -, _ (FE and BE)-->
+    <name val="Guenther_Pascal" /> <!-- Has to be limited to (ASCII-)letters, numbers and -, _ (FE and BE)-->
     <items>
-        <calendar perm="owner" href="file1" />
-        <calendar perm="view" href="file2" />
-        <calendar perm="edit" href="file3" />
+        <calendar perm="owner" href="Guenther_Pascal/Guenther_Pascal" />
+        <calendar perm="view" href="Abc/defg" />
+        <calendar perm="edit" href="OtherUser/OtherCalendar" />
     </items>
 </user>
 ```
