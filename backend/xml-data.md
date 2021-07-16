@@ -125,9 +125,9 @@ User names have to be limited to (ASCII-)letters, numbers and +, -, _ (Frontend 
 <user>
     <name val="Günther Pascal" /> <!-- Has to be limited to (ASCII-)letters, numbers and -, _ (FE and BE)-->
     <items>
-        <calendar href="file1" />
-        <calendar href="file2" />
-        <calendar href="file3" />
+        <calendar perm="owner" href="file1" />
+        <calendar perm="view" href="file2" />
+        <calendar perm="edit" href="file3" />
     </items>
 </user>
 ```
