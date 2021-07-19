@@ -27,15 +27,15 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
         <appointments>
             <appointment id="1224-34-2322342-42-24-24">
                 <name val="somename that works"/>
-                <startDate val="1.4.1990"/>
+                <startDate val="1.4.2021"/>
                 <startTime val="4:12" />
                 <endTime val="5:12" />
-                <endDate val="14.4.2021" />
+                <endDate val="7.4.2021" />
                 <desc>Lorem Ipsum.</desc> <!-- Has to be limited to 250 chars (in Frontend and Backend) -->
             </appointment>
             <appointment id="1224-34-2322342-42-24-24">
                 <name val="somename that also works"/>
-                <startDate val="1.4.1990"/>
+                <startDate val="1.4.2021"/>
                 <startTime val="4:12" />
                 <endTime val="5:12" />
                 <endDate val="14.4.2021" />
@@ -45,13 +45,13 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
         <milestones>
             <milestone id="1224-34-2322342-42-24-24">
                 <name val="somename"/>
-                <duedate val="date"/>
+                <duedate val="1.5.2021"/>
                 <duetime val="5:34"/>
                 <desc>Some Milestone</desc>
             </milestone>
             <milestone id="1224-34-2322342-42-24-24">
                 <name val="somename"/>
-                <duedate val="date"/>
+                <duedate val="1.6.2021"/>
                 <duetime val="5:34"/>
                 <desc>Some Milestone</desc>
             </milestone>
@@ -60,25 +60,25 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             <task id="1224-34-2322342-42-24-24">
                 <name val="name"/>
                 <milestone id="id of the milestone"/>
-                <startDate val="1.4.1990"/>
+                <startDate val="1.7.2021"/>
                 <startTime val="4:12" />
-                <duedate val="date"/>
+                <duedate val="2.8.2021"/>
                 <duetime val="5:34"/>
                 <desc>Dolor</desc>
                 <subtasks>
                     <subtask id="1224-34-2322342-42-24-24">
                         <name val="someName"/>
-                        <startDate val="1.4.1990"/>
+                        <startDate val="2.7.2021"/>
                         <startTime val="4:12" />
-                        <duedate val="date"/>
+                        <duedate val="5.7.2021"/>
                         <duetime val="5:34"/>
                         <desc>sit amet</desc>
                     </subtask>
                     <subtask id="1224-34-2322342-42-24-24">
                         <name val="someName"/>
-                        <startDate val="1.4.1990"/>
+                        <startDate val="7.7.2021"/>
                         <startTime val="4:12" />
-                        <duedate val="date"/>
+                        <duedate val="10.7.2021"/>
                         <duetime val="5:34"/>
                         <desc>sit amet</desc>
                     </subtask>
@@ -87,25 +87,25 @@ Descriptions have to be limited to 250 chars (in Frontend and Backend).
             <task id="1224-34-2322342-42-24-24">
                 <name val="name"/>
                 <milestone id="id of the milestone"/>
-                <startDate val="1.4.1990"/>
+                <startDate val="1.10.2021"/>
                 <startTime val="4:12" />
-                <duedate val="date"/>
+                <duedate val="30.11.2021"/>
                 <duetime val="5:34"/>
                 <desc>Dolor</desc>
                 <subtasks>
                     <subtask id="someID">
                         <name val="someName"/>
-                        <startDate val="1.4.1990"/>
+                        <startDate val="2.10.2021"/>
                         <startTime val="4:12" />
-                        <duedate val="date"/>
+                        <duedate val="5.10.2021"/>
                         <duetime val="5:34"/>
                         <desc>sit amet</desc>
                     </subtask>
                     <subtask id="someID">
                         <name val="someName"/>
-                        <startDate val="1.4.1990"/>
+                        <startDate val="6.10.2021"/>
                         <startTime val="4:12" />
-                        <duedate val="date"/>
+                        <duedate val="10.10.2021"/>
                         <duetime val="5:34"/>
                         <desc>sit amet</desc>
                     </subtask>
